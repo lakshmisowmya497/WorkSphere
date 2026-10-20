@@ -37,7 +37,7 @@ const fadeUp = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   },
 };
@@ -52,7 +52,7 @@ const fadeLeft = {
     x: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   },
 };
@@ -67,7 +67,7 @@ const fadeRight = {
     x: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   },
 };

@@ -96,7 +96,7 @@ export default function EditEmployeePage() {
         // -------------------------------------
 
         const employeeResponse = await fetch(
-          "http://localhost:5000/api/admin/employees",
+          "https://worksphere-backend-6und.onrender.com/api/admin/employees",
           {
             method: "GET",
             headers: {
@@ -147,7 +147,7 @@ export default function EditEmployeePage() {
         // -------------------------------------
 
         const managerResponse = await fetch(
-          "http://localhost:5000/api/admin/project-managers",
+          "https://worksphere-backend-6und.onrender.com/api/admin/project-managers",
           {
             method: "GET",
             headers: {
@@ -229,7 +229,7 @@ export default function EditEmployeePage() {
       // -------------------------------------
 
       const updateResponse = await fetch(
-        `http://localhost:5000/api/admin/employees/${employeeId}`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/employees/${employeeId}`,
         {
           method: "PUT",
           headers: {
@@ -261,7 +261,7 @@ export default function EditEmployeePage() {
       // -------------------------------------
 
       const managerResponse = await fetch(
-        `http://localhost:5000/api/admin/employees/${employeeId}/manager`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/employees/${employeeId}/manager`,
         {
           method: "PATCH",
           headers: {

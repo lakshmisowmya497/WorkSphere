@@ -113,22 +113,22 @@ export default function EditTaskPage() {
           employeesResponse,
         ] = await Promise.all([
           fetch(
-            `http://localhost:5000/api/admin/tasks/${taskId}`,
+            `https://worksphere-backend-6und.onrender.com/api/admin/tasks/${taskId}`,
             { headers }
           ),
 
           fetch(
-            "http://localhost:5000/api/admin/projects",
+            "https://worksphere-backend-6und.onrender.com/api/admin/projects",
             { headers }
           ),
 
           fetch(
-            "http://localhost:5000/api/admin/project-managers",
+            "https://worksphere-backend-6und.onrender.com/api/admin/project-managers",
             { headers }
           ),
 
           fetch(
-            "http://localhost:5000/api/admin/employees",
+            "https://worksphere-backend-6und.onrender.com/api/admin/employees",
             { headers }
           ),
         ]);
@@ -367,7 +367,7 @@ export default function EditTaskPage() {
       // -----------------------------------------
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/tasks/${taskId}`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/tasks/${taskId}`,
         {
           method: "PUT",
 
@@ -436,7 +436,7 @@ export default function EditTaskPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/tasks/${taskId}/employee`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/tasks/${taskId}/employee`,
         {
           method: "PATCH",
 
@@ -509,7 +509,7 @@ export default function EditTaskPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/tasks/${taskId}/manager`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/tasks/${taskId}/manager`,
         {
           method: "PATCH",
 

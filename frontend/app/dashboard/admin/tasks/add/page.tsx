@@ -100,15 +100,15 @@ export default function AddTaskPage() {
           employeesResponse,
         ] = await Promise.all([
           fetch(
-            "http://localhost:5000/api/admin/projects",
+            "https://worksphere-backend-6und.onrender.com/api/admin/projects",
             { headers }
           ),
           fetch(
-            "http://localhost:5000/api/admin/project-managers",
+            "https://worksphere-backend-6und.onrender.com/api/admin/project-managers",
             { headers }
           ),
           fetch(
-            "http://localhost:5000/api/admin/employees",
+            "https://worksphere-backend-6und.onrender.com/api/admin/employees",
             { headers }
           ),
         ]);
@@ -268,7 +268,7 @@ export default function AddTaskPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/tasks",
+        "https://worksphere-backend-6und.onrender.com/api/admin/tasks",
         {
           method: "POST",
           headers: {

@@ -60,7 +60,7 @@ export default function EmployeesPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/employees",
+        "https://worksphere-backend-6und.onrender.com/api/admin/employees",
         {
           method: "GET",
           headers: {
@@ -132,7 +132,7 @@ export default function EmployeesPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/employees/${employeeId}/status`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/employees/${employeeId}/status`,
         {
           method: "PATCH",
           headers: {
@@ -211,7 +211,7 @@ export default function EmployeesPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/employees/${employeeId}`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/employees/${employeeId}`,
         {
           method: "DELETE",
           headers: {

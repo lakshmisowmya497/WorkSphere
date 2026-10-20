@@ -65,7 +65,7 @@ export default function AddProjectManagerPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/project-managers",
+        "https://worksphere-backend-6und.onrender.com/api/admin/project-managers",
         {
           method: "POST",
           headers: {

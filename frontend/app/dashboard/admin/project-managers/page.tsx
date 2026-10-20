@@ -52,7 +52,7 @@ export default function ProjectManagersPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/project-managers",
+        "https://worksphere-backend-6und.onrender.com/api/admin/project-managers",
         {
           method: "GET",
           headers: {
@@ -157,7 +157,7 @@ export default function ProjectManagersPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/project-managers/${managerId}/status`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/project-managers/${managerId}/status`,
         {
           method: "PATCH",
           headers: {
@@ -240,7 +240,7 @@ export default function ProjectManagersPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/project-managers/${managerId}`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/project-managers/${managerId}`,
         {
           method: "DELETE",
           headers: {

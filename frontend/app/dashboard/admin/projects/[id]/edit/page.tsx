@@ -92,7 +92,7 @@ export default function EditProjectPage() {
         }
 
         const response = await fetch(
-          `http://localhost:5000/api/admin/projects/${projectId}`,
+          `https://worksphere-backend-6und.onrender.com/api/admin/projects/${projectId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -160,7 +160,7 @@ export default function EditProjectPage() {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/admin/project-managers",
+          "https://worksphere-backend-6und.onrender.com/api/admin/project-managers",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -272,7 +272,7 @@ export default function EditProjectPage() {
 
       // UPDATE BASIC PROJECT INFORMATION
       const updateResponse = await fetch(
-        `http://localhost:5000/api/admin/projects/${projectId}`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/projects/${projectId}`,
         {
           method: "PUT",
           headers: {
@@ -304,7 +304,7 @@ export default function EditProjectPage() {
           project?.projectManager?._id
       ) {
         const managerResponse = await fetch(
-          `http://localhost:5000/api/admin/projects/${projectId}/manager`,
+          `https://worksphere-backend-6und.onrender.com/api/admin/projects/${projectId}/manager`,
           {
             method: "PATCH",
             headers: {
@@ -334,7 +334,7 @@ export default function EditProjectPage() {
         formData.status !== project?.status
       ) {
         const statusResponse = await fetch(
-          `http://localhost:5000/api/admin/projects/${projectId}/status`,
+          `https://worksphere-backend-6und.onrender.com/api/admin/projects/${projectId}/status`,
           {
             method: "PATCH",
             headers: {

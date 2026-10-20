@@ -110,7 +110,7 @@ export default function AdminSettingsPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/change-password",
+        "https://worksphere-backend-6und.onrender.com/api/auth/change-password",
         {
           method: "PUT",
           headers: {

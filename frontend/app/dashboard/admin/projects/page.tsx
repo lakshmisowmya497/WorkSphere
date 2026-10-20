@@ -60,7 +60,7 @@ export default function ProjectsPage() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/projects",
+        "https://worksphere-backend-6und.onrender.com/api/admin/projects",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -191,7 +191,7 @@ export default function ProjectsPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/projects/${projectId}/status`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/projects/${projectId}/status`,
         {
           method: "PATCH",
           headers: {
@@ -250,7 +250,7 @@ export default function ProjectsPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/admin/projects/${projectId}`,
+        `https://worksphere-backend-6und.onrender.com/api/admin/projects/${projectId}`,
         {
           method: "DELETE",
           headers: {

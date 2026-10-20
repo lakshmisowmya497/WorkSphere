@@ -71,7 +71,7 @@ export default function ProjectManagerTeamPage({
          * Get all project managers
          */
         const managersResponse = await fetch(
-          "http://localhost:5000/api/admin/project-managers",
+          "https://worksphere-backend-6und.onrender.com/api/admin/project-managers",
           {
             method: "GET",
             headers: {
@@ -95,7 +95,7 @@ export default function ProjectManagerTeamPage({
         const selectedManager = managers.find(
           (item: ProjectManager) =>
             item._id === resolvedParams.id ||
-            item.id === resolvedParams.id
+            item._id === resolvedParams.id
         );
 
         if (!selectedManager) {
@@ -110,7 +110,7 @@ export default function ProjectManagerTeamPage({
          * Get employees
          */
         const employeesResponse = await fetch(
-          "http://localhost:5000/api/admin/employees",
+          "https://worksphere-backend-6und.onrender.com/api/admin/employees",
           {
             method: "GET",
             headers: {
